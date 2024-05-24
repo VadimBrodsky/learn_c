@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 int main(void) {
-  // puts can fail, check it here
-  if (puts("Hello, world!") == EOF) {
+  // printf allows to format the outout text
+  if (printf("%s\n", "Hello, world!") == EOF) {
     return EXIT_FAILURE;
   }
 
